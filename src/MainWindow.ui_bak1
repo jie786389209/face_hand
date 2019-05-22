@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1126</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="FrameLabel">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>30</y>
+      <width>640</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>1</horstretch>
+      <verstretch>1</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>640</width>
+      <height>480</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>640</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="openExternalLinks">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QDateTimeEdit" name="dateTimeEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="attendance_people">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai CN</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="title">
+     <string>签到人员</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="system_name">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>0</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai CN</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>暨南大学课堂签到系统</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>191</width>
+      <height>99</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QPushButton" name="loadInButton">
+       <property name="text">
+        <string>导入</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="batchRegisterButton">
+       <property name="text">
+        <string>批量注册</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="registerButton">
+       <property name="text">
+        <string>注册</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="loadOutButton">
+       <property name="text">
+        <string>导出</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>学生通道：</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>191</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="teacher_name">
+       <property name="text">
+        <string>任课老师</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="teacherEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="classroom_name">
+       <property name="text">
+        <string>上课教室</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="classEdit"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextBrowser" name="attendance_people_text">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>201</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push_attend">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>240</y>
+      <width>91</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>签到</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="absence_people">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai CN</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="title">
+     <string>缺勤人员</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="absence_people_text">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>201</width>
+      <height>121</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="system_setting">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>30</y>
+      <width>221</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai CN</family>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="title">
+     <string>系统设置</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="CameraCheckBox">
+        <property name="font">
+         <font>
+          <family>AR PL UKai CN</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>外置相机</string>
+        </property>
+        <property name="tristate">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="CameraButton">
+        <property name="font">
+         <font>
+          <family>AR PL UKai CN</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>开启摄像头</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="tolerancelabel">
+        <property name="font">
+         <font>
+          <family>AR PL UKai CN</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>容错率</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSlider" name="toleranceSlider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="valueLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="instruction">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>240</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai CN</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>使用说明</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>340</y>
+      <width>231</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai CN</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>日志</string>
+    </property>
+    <widget class="QTextBrowser" name="log_box">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>231</width>
+       <height>211</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>150</y>
+      <width>211</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai CN</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>数据库</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1126</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
